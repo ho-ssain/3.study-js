@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+/* To center an element both horizontally and vertically within its parent container, especially when the element's size is dynamic or unknown, */
+
+.container {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.star-rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fa-star-o::before {
+  content: "\f006";
+  font-size: 40px;
+}
+
+.selected-rating-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.selected-rating-container p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.fa-star:hover {
+  cursor: pointer;
+}
+
+.fa-star::before {
+  content: "\f005";
+  font-size: 40px;
+  color: rgb(179, 255, 2);
+}
