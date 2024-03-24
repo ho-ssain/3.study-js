@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Color Generator</title>
+
+    <!-- Include the styles -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- link the font awesome -->
+    <script
+      src="https://kit.fontawesome.com/a221cb47ee.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Include the script file-->
+    <script src="./main.js" defer></script>
+  </head>
+
+  <body>
+    <h2>Random Color Generator</h2>
+
+    <div class="random-color-generator-container">
+      <div class="hex-color-container">
+        <div class="hex-color-value">#FFFFFF</div>
+        <button class="hex-btn">Create Hex Color</button>
+        <button class="copy-hex copy-btn">Copy To Clipboard</button>
+      </div>
+
+      <div class="rgb-color-container">
+        <div class="rgb-color-value">rgb(255, 255, 255)</div>
+
+        <div>
+          <label for="red">
+            <span style="color: red"> Red</span>
+            <input type="range" min="0" max="250" value="0" id="red" />
+          </label>
+        </div>
+
+        <div>
+          <label for="green">
+            <span style="color: rgb(0, 255, 0)"> Green</span>
+            <input type="range" min="0" max="250" value="0" id="green" />
+          </label>
+        </div>
+
+        <div>
+          <label for="blue">
+            <span style="color: blue">Blue</span>
+            <input type="range" min="0" max="250" value="0" id="blue" />
+          </label>
+        </div>
+
+        <button class="rgb-btn">Create RGB Color</button>
+
+        <button class="copy-rgb copy-btn">Copy To Clipboard</button>
+      </div>
+    </div>
+  </body>
+</html>
