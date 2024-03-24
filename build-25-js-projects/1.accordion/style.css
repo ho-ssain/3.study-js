@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(112, 255, 238);
+}
+
+.section {
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: rgb(102, 14, 183);
+  border-bottom: 1px solid blueviolet;
+  text-align: center;
+}
+
+.accordion {
+  max-width: 700px;
+  margin: auto;
+}
+
+.accordion_item {
+  border: 1px solid rgb(16, 1, 155);
+  padding: 20px;
+}
+
+.accordion_title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.accordion_title h3 {
+  flex: 1;
+}
+
+.accordion_title:hover {
+  cursor: pointer;
+}
+
+.accordion_content {
+  display: none;
+}
+
+.accordion_title.active + .accordion_content {
+  display: block;
+  padding-top: 20px;
+}
+
+.accordion_title.active i {
+  transform: rotate(180deg);
+}
+
+.accordion_title.active {
+  border-bottom: 2px solid darkgray;
+}

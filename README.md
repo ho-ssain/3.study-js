@@ -4,12 +4,12 @@
 
 ## Syllabus
 
-1. JS/history/ECMAS
+1. JS/history/ECMA
 2. Variables
 3. Scope (variable accessibility)
 4. Data Types
 5. String Indexing
-6. Usefull String Methods
+6. Useful String Methods
 7. Template String
 8. Booleans and Comparison Operator
 9. Truthy and Falsy Values
@@ -40,7 +40,7 @@
     4. computed properties
     5. spread operator in obj
     6. Object destructuring
-    7. objs inside array
+    7. obj's inside array
     8. Nested destructuring
 22. Functions
     1. func dec
@@ -71,3 +71,30 @@
 27. Object.assign
 28. Optional chaining
 29. OOP in JS / Prototypal Inheritance
+
+## Projects
+
+1. Accordion
+2. Random Color Generator
+3. Star Rating Component
+4. API Call - XHR, Fetch and Async Await
+5. Image Slider
+6. Load more button API call
+7. Dark Mode Toggle
+8. Random Quote Generator
+9. Custom Tabs
+10. Custom Modal Popup
+11. Tic Tac Toe
+12. Filter Cards
+13. QR Code Generator
+14. Scroll to Top and Scroll to Bottom
+15. Button ripple effect
+16. Multi-step progress bar
+17. Scroll Indicator
+18. Tip calculator
+19. Sticky Navbar
+20. Random image generator
+21. Github Profile finder
+22. Pagination
+23. Recipe App
+24. Notes App with local storage
