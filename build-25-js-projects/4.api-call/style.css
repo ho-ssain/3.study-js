@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  /* background: black;
+  color: white; */
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: orangered;
+  text-align: center;
+}
+
+.post-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid rgb(0, 158, 8);
+  border-radius: 20px 0 20px 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.858);
+  color: white;
+}
+
+.post-item h3 {
+  color: lightgreen;
+}
