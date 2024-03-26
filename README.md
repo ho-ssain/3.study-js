@@ -98,3 +98,8 @@
 22. Pagination
 23. Recipe App
 24. Notes App with local storage
+
+## resources
+
+[DummyJSON](https://dummyjson.com/)
+-> Get dummy/fake JSON data to use as placeholder in development or in prototype testing.

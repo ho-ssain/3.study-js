@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container h2 {
+  color: aqua;
+  text-decoration: underline;
+}
+
+.refresh-btn {
+  padding: 5px 20px;
+  border-radius: 20px 0 20px 0;
+  background: rgb(34, 193, 195);
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(0, 0, 0, 0.9501424501424501) 31%
+  );
+  color: aqua;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.refresh-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.refresh-btn:active {
+  transform: scale(1);
+}
+
+.quote-wrapper {
+  background: rgb(34, 193, 195);
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(0, 0, 0, 0.9501424501424501) 31%
+  );
+  color: lime;
+}
+
+.author {
+  color: orangered;
+}
+
+.loader {
+  color: white;
+  display: none;
+}
+
+.loader.show {
+  display: block;
+}
+
+.quote-wrapper.hide {
+  display: none;
+}
