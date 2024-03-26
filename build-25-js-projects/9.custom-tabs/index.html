@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- link the font awesome -->
+    <script
+      src="https://kit.fontawesome.com/a221cb47ee.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Custom tabs</h1>
+      <div class="buttons-wrapper">
+        <button class="tab-button active" data-id="home">
+          <i class="fa-solid fa-house"></i>
+          Home
+        </button>
+        <button class="tab-button" data-id="services">
+          <i class="fa-brands fa-servicestack"></i>
+          Services
+        </button>
+        <button class="tab-button" data-id="portfolio">
+          <i class="fa-solid fa-briefcase"></i>
+          Portfolio
+        </button>
+        <button class="tab-button" data-id="contact">
+          <i class="fa-solid fa-address-book"></i>
+          Contact
+        </button>
+        <button class="tab-button" data-id="about">
+          <i class="fa-solid fa-circle-info"></i>
+          About
+        </button>
+      </div>
+
+      <div class="content-wrapper">
+        <p id="home" class="content active">
+          <i class="fa-solid fa-house"></i>
+          <span>This is the Home Section!</span>
+        </p>
+
+        <p id="services" class="content">
+          <i class="fa-brands fa-servicestack"></i>
+          <span>This is the Service Section!</span>
+        </p>
+
+        <p id="portfolio" class="content">
+          <i class="fa-solid fa-briefcase"></i>
+          <span>This is the Portfolio Section!</span>
+        </p>
+
+        <p id="contact" class="content">
+          <i class="fa-solid fa-address-book"></i>
+          <span>This is the Contact Section!</span>
+        </p>
+
+        <p id="about" class="content">
+          <i class="fa-solid fa-circle-info"></i>
+          <span>This is the About Section!</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
