@@ -21,6 +21,7 @@ const validateInputField = () => {
   if (qrText.value.trim().length > 0) {
     generateQRCOde();
   } else {
+    qrContainer.innerHTML = "";
     errorMessage.textContent = "🚫!! Enter text or use some url!";
   }
 };
