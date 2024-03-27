@@ -19,6 +19,7 @@ const winningPatterns = [
 
 message.textContent = `${currentPlayer}'s Turn`;
 
+//  Function to handle click event on each square
 for (let i = 0; i < squares.length; i++) {
   squares[i].addEventListener("click", () => {
     if (squares[i].textContent !== "" || checkWinner(currentPlayer)) return;
@@ -30,6 +31,11 @@ for (let i = 0; i < squares.length; i++) {
       return;
     }
 
+    if (checkTie()) {
+      message.textContent = `Game is Tie! - Please Restart!`;
+      return;
+    }
+
     currentPlayer = currentPlayer === players[0] ? players[1] : players[0];
 
     message.textContent = `${currentPlayer}'s Turn`;
@@ -37,8 +43,7 @@ for (let i = 0; i < squares.length; i++) {
 }
 
 // checking winner
-
-function checkWinner() {
+function checkWinner(currentPlayer) {
   for (let i = 0; i < winningPatterns.length; i++) {
     const [a, b, c] = winningPatterns[i];
 
@@ -51,6 +56,14 @@ function checkWinner() {
   }
 
   return false;
+}
+
+// checking the tie result
+function checkTie() {
+  for (let i = 0; i < squares.length; i++) {
+    if (squares[i].textContent === "") return false;
+  }
+  return true;
 }
 
 // restart the game
