@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-height: 100vh;
+  width: 100%;
+  background: #222;
+}
+
+.top-section {
+  background-color: rgb(29, 11, 186);
+  padding: 10px 0px;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+}
+
+.top-section h1 {
+  text-align: center;
+}
+
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background-color: white;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: black;
+  width: 0%;
+}
+
+.content {
+  margin: 40px auto 0 auto;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content .recipe {
+  padding: 5px 10px;
+  background: linear-gradient(90deg, rgb(181, 3, 3), rgb(3, 3, 144));
+  color: white;
+}
+
+.content .recipe h2 {
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content .recipe p {
+  margin-bottom: 5px;
+}
+
+.content.hide {
+  display: none;
+}
+
+.content .recipe p span {
+  font-weight: bold;
+  color: yellow;
+}
+
+.loader {
+  display: none;
+  text-align: center;
+  font-size: 24px;
+  color: yellowgreen;
+}
+
+.loader.show {
+  display: block;
+}
