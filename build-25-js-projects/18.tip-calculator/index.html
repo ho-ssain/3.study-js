@@ -18,5 +18,84 @@
     <script src="./main.js" defer></script>
   </head>
 
-  <body></body>
+  <body>
+    <h1>Tip Calculator</h1>
+    <div class="form-wrapper">
+      <!-- ------------------------------------- -->
+      <div class="input-wrapper">
+        <label for="bill-amount">
+          <span>Bill Amount:</span>
+          <input
+            type="text"
+            id="bill-amount"
+            class="bill-amount"
+            required
+            placeholder="Enter total bill amount"
+          />
+        </label>
+      </div>
+
+      <!-- ------------------------------------- -->
+      <div class="input-wrapper">
+        <label for="discount-percentage">
+          <span>Discount:</span>
+          <span class="discount-value">0</span>
+          <input
+            type="range"
+            id="discount-percentage"
+            class="discount-percentage"
+            max="50"
+            min="0"
+          />
+        </label>
+      </div>
+
+      <!-- ------------------------------------- -->
+      <div class="input-wrapper">
+        <label for="tip-percentage">
+          <span>Tips:</span>
+          <span class="tip-value">0</span>
+          <input
+            type="range"
+            id="tip-percentage"
+            class="tip-percentage"
+            max="50"
+            min="0"
+          />
+        </label>
+      </div>
+
+      <!-- ------------------------------------- -->
+      <div class="input-wrapper">
+        <label for="no-of-customers">
+          <span>No. of Customers:</span>
+          <span class="customer-value">0</span>
+          <input
+            type="range"
+            id="no-of-customers"
+            class="no-of-customers"
+            max="100"
+            min="1"
+          />
+        </label>
+      </div>
+
+      <!-- ------------------------------------- -->
+      <button class="generate-bill">Generate Bill</button>
+
+      <!-- ------------------------------------- -->
+      <div>
+        <label for="tip">Total Tip Paid-:</label>
+        <span id="tip" class="total-tip">0</span>
+      </div>
+      <div>
+        <label for="bill-paid">Total Bill To Pay-:</label>
+        <span id="bill-paid" class="total-bill-to-pay">0</span>
+      </div>
+      <div>
+        <label for="each-cus-paid">Each Customer To Pay-:</label>
+        <span id="each-cus-paid" class="each-cus-to-pay">0</span>
+      </div>
+    </div>
+  </body>
 </html>
