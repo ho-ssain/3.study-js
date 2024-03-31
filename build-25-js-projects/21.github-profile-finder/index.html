@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github-profile-finder</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- link the font awesome -->
+    <script
+      src="https://kit.fontawesome.com/a221cb47ee.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./main.js" defer></script>
+  </head>
+
+  <body>
+    <h2>Github Profile Finder</h2>
+    <div class="search-wrapper">
+      <input
+        type="text"
+        placeholder="Enter github  username..."
+        id="usernameInput"
+        class="search-input"
+      />
+      <button class="search-btn">Search</button>
+    </div>
+    <p class="loading-message">
+      <i class="fa-solid fa-spinner"></i>
+      ...Please Wait!
+    </p>
+    <div class="profile-area"></div>
+  </body>
+</html>
