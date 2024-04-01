@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(5, 93, 125));
+  color: green;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  color: lightblue;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 0 10px 0;
+  border: 2px double darkblue;
+}
+
+.input-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.input-container h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  padding: 6px 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 80%;
+  font-size: 16px;
+}
+
+.input-container button {
+  padding: 6px 10px;
+  border-radius: 10px 0 0 0;
+  background: rgba(0, 0, 0, 0.603);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+ul {
+  width: 400px;
+  list-style: none;
+  text-align: center;
+}
+
+ul li {
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  background: linear-gradient(90deg, rgb(205, 5, 5), rgb(1, 1, 145));
+  border-radius: 20px 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+ul li .edit-btn {
+  color: lime;
+  cursor: pointer;
+}
+
+ul li .delete-btn {
+  color: red;
+  cursor: pointer;
+}
