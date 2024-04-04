@@ -16,3 +16,17 @@ History-:
 
 
 */
+
+// let n1 = prompt("Enter n1: ");
+// let n2 = prompt("Enter n2: ");
+// let numbers = prompt("Enter some numbers: ");
+// let numArray = numbers.split(" ");
+// console.log("🚀 ~ numArray:", numArray);
+// let sum = +n1 + +n2;
+// console.log("🚀 ~ sum:", typeof sum, sum);
+
+console.log("Hello Word 1!");
+console.log(`hello World!
+Js is fun
+`);
+console.log('he said "she is okay"');

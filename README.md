@@ -5,7 +5,32 @@
 ## Syllabus
 
 1. basic
-   1. history (js and ecmascript)
+   --> history (js and ecmascript)
+   --> console, prompt, comment
+   1. variables
+   2. naming rules for variables
+   3. var, let, const
+   4. string indexing
+   5. some string methods (
+      1. trim(),
+      2. toUpperCase(),
+      3. toLowerCase(),
+      4. slice())
+   6. typeof and data conversion
+   7. string concatenation
+   8. template strings
+   9. undefined, null, bigint
+   10. booleans & comparison Operators
+   11. if-else & truthy-falsy values
+   12. ternary operator
+   13. and, or operator
+   14. nested if else
+   15. else if
+   16. switch statement
+   17. while loop
+   18. for loop
+   19. break and continue
+   20. do-while loop
 
 ## Projects
 
